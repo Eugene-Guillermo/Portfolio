@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer>
+            $(document).ready(function() {
+                $("#menu").click(function() {
+                    if ($('#mobile-links').css('display') === 'none')
+                    {
+                        $('#mobile-links').css('display', 'flex');
+                    }
+                    else
+                    {
+                        $('#mobile-links').css('display', 'none');
+                    }
+                })
+                $(window).resize(function() {
+                    if ($(window).width() > 600) {
+                        $('#mobile-links').css('display', 'none');
+                    }
+                });
+                $("#projects").hover(function() {
+                    $('#projects-list').css('display', 'flex');
+                }, function() {
+                    $('#projects-list').mouseleave(function() {
+                        $(this).css('display', 'none');
+                    });
+                });
+
+                $("#projects-list").mouseenter(function() {
+                    $(this).css('display', 'flex');
+                });
+
+                $("#projects-list").mouseleave(function() {
+                    $(this).css('display', 'none');
+                });
+                $("#resume").click(function() {
+                    open("resources/Eugene-Resume.pdf")
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="Home.html"><h1>My Portfolio</h1></a>
+            <div id="links">
+                <a href="Home.html#home">Home</a>
+                <a href="Home.html#about">About</a>
+                <a href="Home.html##media">Contact</a>
+                <div id="projects">
+                    Projects
+                    <div id="projects-list">
+                        <p>Java</p>
+                        <div id="java">
+                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
+                            <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
+                        </div>
+                        <p>Python</p>
+                        <div id= "python">
+                            <a href="TFTP-Client.html">TFTP Client</a>
+                        </div>
+                        <p>C</p>
+                        <div id="c">
+                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="menu"><p>Menu</p></div>
+        </div>
+
+        <div id="mobile-menu">
+            <div id="mobile-links">
+                <a href="Home.html#home">Home</a>
+                <a href="Home.html#about">About</a>
+                <a href="Home.html#media">Contact</a>
+                <div id="mobile-projects">
+                    Projects
+                    <div id="mobile-projects-list">
+                        <p>Java</p>
+                        <div id="java">
+                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
+                            <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
+                        </div>
+                        <p>Python</p>
+                        <div id= "python">
+                            <a href="TFTP-Client.html">TFTP Client</a>
+                        </div>
+                        <p>C</p>
+                        <div id="c">
+                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <h1>Farming Simulator Game (MyFarm)</h1>
+            <h2>A Major Course Output Made for Object-Oriented Programming Class</h2><br>
+            <a href="https://github.com/Eugene-Guillermo/MyFarm"><h2>Github Link</h2></a><br>
+            <p>This is a farming simulator game with a graphical user interface. A screenshot can be found below.</p>
+            <img src="resources/MyFarm/Screenshot.jpg" style="max-width: 800px;">
+            <p>This was done in collaboration with a groupmate. We split some parts and did pair programming on others. I also did a sample prototype on the graphical user interface.</p>
+            <p>I learned about Java and object oriented programming. I also learned about graphical user interface and, particularly, about Java Swing. I also learned about UML's.</p>
+        </div>
+    </body>
+</html>
