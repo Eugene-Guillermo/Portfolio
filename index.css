@@ -1,0 +1,221 @@
+:root {
+    --dark: #233040;
+    --deep: #42526E;
+    --medium: #6B7B8C;
+    --soft: #AAB8C2;
+    --light: #D9E4E9;
+}
+body
+{
+    font-family: Helvetica;
+    background-color: var(--light);
+    font-size: 1.5em;
+    margin: 0;
+}
+#about
+{
+    width: 85%;
+    margin: auto;
+    background-color: var(--soft);
+    padding: 1em;
+    overflow: auto;
+    border-radius: 3em;
+    border-style: solid;
+    border-color: var(--dark);
+    border-width: 2px;
+    margin-bottom: 3em;
+}
+#about h1
+{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+#about h2
+{
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-top: 0;
+    display: inline-block;
+}
+#about p
+{
+    font-size: 1em;
+    font-weight: lighter;
+}
+#pic-container
+{
+    overflow: hidden;
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    float: left;
+    margin: 2em;
+}
+#circle
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--light), var(--soft));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#pic
+{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 600px)
+{
+    #media-links
+    {
+        flex-wrap: wrap;
+    }
+    #pic-container
+    {
+        margin: auto;
+        float: none;
+    }
+}
+#media
+{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+#media p
+{
+    margin: auto;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+#media button
+{
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-family: Helvetica;
+    border-radius: 0.4em;
+    background-color: var(--medium);
+    color: white;
+    padding: 0.5em;
+    align-self: center;
+}
+#media button:hover
+{
+    background-color: var(--light);
+    color: black;
+}
+#media-links
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#media-links .link
+{
+    width: 36px;
+    height: 36px;
+    background-size: 178px, 72px;
+    background-repeat: no-repeat;
+    background-image: url("resources/spritesheet.png");
+    margin: 0em 1.5em;
+}
+#github
+{
+    margin-left: 0em;
+    background-position: -37px 0px;
+}
+#github:hover
+{
+    background-position: -37px -36px;
+}
+#linkedin
+{
+    background-position: -72px 0px;
+}
+#linkedin:hover
+{
+    background-position: -72px -36px;
+}
+#gmail
+{
+    margin: 0em 1.5em;
+    filter: brightness(60%) grayscale(200%);
+    
+}
+#gmail:hover
+{
+    filter: grayscale(0%);
+}
+#project-spotlight
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 2em;
+}
+
+.project
+{
+    background-image: linear-gradient(to bottom right, var(--light), var(--soft), var(--medium));
+    padding: 1em;
+    overflow: auto;
+    border-style: solid;
+    border-color: var(--dark);
+    border-width: 2px;
+    border-radius: 1em;
+    width: 40%;
+}
+.project h1
+{
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+}
+.project h2
+{
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0px;
+}
+.project p
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+.project button
+{
+    padding: 0.3em;
+    font-size: 0.7em;
+    border-radius: 0.4em;
+    background-color: var(--medium);
+    color: white;
+    padding: 0.5em;
+    float: right;
+    margin-right: 2em;
+}
+.project button:hover
+{
+    background-color: var(--light);
+    color: black;
+}
+@media screen and (max-width: 600px)
+{
+    #project-spotlight
+    {
+        flex-direction: column;
+    }
+    .project
+    {
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}

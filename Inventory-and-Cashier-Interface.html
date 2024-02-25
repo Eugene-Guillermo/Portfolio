@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="project.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer>
             $(document).ready(function() {
@@ -16,7 +16,7 @@
                     else
                     {
                         $('#mobile-links').css('display', 'none');
-                        $("body").scrollTop($("#pic").offset().top - 20);
+                        $("body").scrollTop($("#project").offset().top - 20);
                     }
                 })
                 $(window).resize(function() {
@@ -40,7 +40,7 @@
                     $(this).css('display', 'none');
                 });
                 $("#resume").click(function() {
-                    open("resources/Eugene-Guillermo-Resume.pdf")
+                    open("resources/Eugene-Resume.pdf")
                 });
             })
         </script>
@@ -49,9 +49,9 @@
         <div id="navbar">
             <a href="index.html"><h1>My Portfolio</h1></a>
             <div id="links">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#media">Contact</a>
+                <a href="index.html#">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html##media">Contact</a>
                 <div id="projects">
                     Projects
                     <div id="projects-list">
@@ -67,7 +67,7 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
@@ -78,9 +78,9 @@
 
         <div id="mobile-menu">
             <div id="mobile-links">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#media">Contact</a>
+                <a href="index.html#">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#media">Contact</a>
                 <div id="mobile-projects">
                     Projects
                     <div id="mobile-projects-list">
@@ -96,52 +96,16 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="about">
-            <div id="pic-container">
-                <div id="circle">
-                    <img id="pic" src="resources/1x1.png">
-                </div>
-            </div>
-            <div>
-                <h1>Hi, I'm Eugene Guillermo.</h1>
-                <h2>BS Computer Science Major in Network and Information Security | De La Salle University</h2>
-                <p>I'm currently a 3rd year undergraduate student in De La Salle University looking for internships and opportunities for growth. I wish to learn more in the field of technology. I like playing games and am interested in game development.</p>
-                <p>I am proficient in Java and knowledgeable in a few other languages such as Python and C. I am also knowledgeable in HTML, CSS, and JavaScript.</p>
-            </div>
-            <br>
-
-            <div id="media">
-                <p>Find me on:</p>
-                <div id="media-links">
-                    <button id="resume">
-                        My Resume
-                    </button>
-                    <a href="http://www.github.com/Eugene-Guillermo"><div id="github" class="link"></div></a>
-                    <a href="http://www.linkedin.com/in/eugene-guillermo/"><div id="linkedin" class="link"></div></a>
-                    <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=e.guillermo812@gmail.com&tf=1"><img id="gmail" src="resources/gmail.webp" width="36px" height="36px" style="width:36px"></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="project-spotlight">
-            <div class="project">
-                <h1>Cache Simulation Project</h1>
-                <h2>Java</h2>
-                <p>A Cache Simulation Project That Uses Full Associative Mapping Function and Random Replacement Algorithm Made For Introduction to Computer Organization and Architecture 2 Class</p>
-                <a href="Cache-Simulation-Project.html"><button>Read More</button></a>
-            </div>
-            <div class="project">
-                <h1>Farming Simulator Game</h1>
-                <h2>Java</h2>
-                <p>A Farming Simulator Game with a Graphical User Interface(GUI) for Object-Oriented Programming Class</p>
-                <a href="Farming-Simulator-Game.html"><button>Read More</button></a>
-            </div>
+        <div id="project">
+            <h1>Client and Cashier Interface</h1>
+            <h2>Apologies (｡ŏ﹏ŏ). This project is still being worked on.</h2>
+            <p>o(TヘTo)</p>
         </div>
     </body>
 </html>

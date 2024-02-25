@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="project.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer>
             $(document).ready(function() {
@@ -10,10 +11,12 @@
                     if ($('#mobile-links').css('display') === 'none')
                     {
                         $('#mobile-links').css('display', 'flex');
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
                     }
                     else
                     {
                         $('#mobile-links').css('display', 'none');
+                        $("body").scrollTop($("#project").offset().top - 20);
                     }
                 })
                 $(window).resize(function() {
@@ -54,7 +57,7 @@
                     <div id="projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -64,7 +67,7 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
                     <div id="mobile-projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -93,21 +96,23 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div id="about">
+        <div id="project">
             <h1>Farming Simulator Game (MyFarm)</h1>
+            <a href="https://github.com/Eugene-Guillermo/MyFarm"><h2>Github Link</h2></a>
             <h2>A Major Course Output Made for Object-Oriented Programming Class</h2><br>
-            <a href="https://github.com/Eugene-Guillermo/MyFarm"><h2>Github Link</h2></a><br>
-            <p>This is a farming simulator game with a graphical user interface. A screenshot can be found below.</p>
-            <img src="resources/MyFarm/Screenshot.jpg" style="max-width: 800px;">
-            <p>This was done in collaboration with a groupmate. We split some parts and did pair programming on others. He acted as the driver while I acted as the navigator. I also did a sample prototype on the graphical user interface.</p>
-            <p>I learned about Java and object oriented programming. I also learned about graphical user interface and, particularly, about Java Swing. I also learned about UML's.</p>
+            <div id="details">
+                <p>This is a farming simulator game with a graphical user interface. A screenshot can be found below.</p>
+                <img src="resources/MyFarm/Screenshot.jpg" style="max-width: 800px;">
+                <p>This was done in collaboration with a groupmate. We split some parts and did pair programming on others. He acted as the driver while I acted as the navigator. I also did a sample prototype on the graphical user interface.</p>
+                <p>I learned about Java and object oriented programming. I also learned about graphical user interface and, particularly, about Java Swing. I also learned about UML's.</p>
+            </div>
         </div>
     </body>
 </html>

@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="project.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer>
             $(document).ready(function() {
@@ -10,10 +11,12 @@
                     if ($('#mobile-links').css('display') === 'none')
                     {
                         $('#mobile-links').css('display', 'flex');
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
                     }
                     else
                     {
                         $('#mobile-links').css('display', 'none');
+                        $("body").scrollTop($("#project").offset().top - 20);
                     }
                 })
                 $(window).resize(function() {
@@ -54,7 +57,7 @@
                     <div id="projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -64,7 +67,7 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
                     <div id="mobile-projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -93,23 +96,26 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div id="about">
+
+        <div id="project">
             <h1>Cache Simulation Project</h1>
+            <h2>Java | November 2023</h2>
+            <a href="https://github.com/vmarissaann/CacheSimulation"><h2>Github Link</h2></a>
             <h2>A Major Course Output Made for Introduction to Computer Organization and Architecture 2 Class</h2><br>
-            <a href="https://github.com/vmarissaann/CacheSimulation"><h2>Github Link</h2></a><br>
-            <p>This is a cache simulation project that uses full associative mapping function and random replacement algorithm. Some screenshots can be found below.</p>
-            <img src="resources/Cache-Simulation/Animation-in-Progress.jpg" style="max-width: 598px;">
-            <img src="resources/Cache-Simulation/Displaying-of-Results.jpg" style="max-width: 601px;">
-            <p>This was done in collaboration with groupmates. I made a prototype for the project which my groupmates expanded on and improved.</p>
-            <p>I learned how to use Github and do version control with Github Desktop. I also learned how to animate and move around JLabels. I also learned more about timer loops.</p>
-            <p>For more information, please check the Github link.</p>
+            <div id="details">
+                <p>This is a cache simulation project that uses full associative mapping function and random replacement algorithm. Some screenshots can be found below.</p>
+                <img src="resources/Cache-Simulation/Animation-in-Progress.jpg" style="max-width: 598px;">
+                <img src="resources/Cache-Simulation/Displaying-of-Results.jpg" style="max-width: 601px;">
+                <p>This was done in collaboration with groupmates. I made a prototype for the project which my groupmates expanded on and improved.</p>
+                <p>I learned how to use Github and do version control with Github Desktop. I also learned how to animate and move around JLabels. I also learned more about timer loops.</p>
+                <p>For more information, please check the Github link.</p>
+            </div>
         </div>
     </body>
 </html>

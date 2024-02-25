@@ -1,0 +1,196 @@
+:root {
+    --dark: #233040;
+    --deep: #42526E;
+    --medium: #6B7B8C;
+    --soft: #AAB8C2;
+    --light: #D9E4E9;
+    --accent1: #ded9d4;
+    --accent2: #b2a59a;
+}
+#navbar
+{
+    background-image: linear-gradient(0.70turn, var(--dark), var(--deep), var(--medium));
+    border-bottom-style: solid;
+    border-bottom-color: var(--light-yellow);
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+#navbar a
+{
+    text-decoration: none;
+}
+#navbar h1
+{
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: white;
+    text-shadow: -2px 6px var(--dark);
+    margin: 0;
+}
+#links
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 0.5em;
+}
+#links a
+{
+    padding: 0.5em;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+#links a:hover
+{
+    background-color: var(--deep);
+}
+#mobile-links
+{
+    display: none;
+}
+#menu
+{
+    display: none;
+}
+#projects
+{
+    position: relative;
+    display: block;
+    margin: 0em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#projects:hover
+{
+    background-color: var(--deep);
+}
+#projects-list
+{
+    position: absolute;
+    top: 2.6em;
+    right: 0;
+    background-color: var(--medium);
+    display: none;
+    flex-direction: column;
+    width: 10em;
+}
+#projects-list div
+{
+    display: flex;
+    flex-direction: column;
+}
+#projects-list p
+{
+    border-bottom-style: solid;
+    margin-top: 0em;
+    margin-bottom: 0.4em;
+    font-size: 0.9em;
+    padding: 0.3em; 
+    background-color: var(--dark);
+}
+#projects-list a
+{
+    font-size: 0.8em;
+}
+#projects-list a:hover
+{
+    background-color: var(--deep);
+}
+@media screen and (max-width: 600px)
+{
+    #links
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: block;
+    }
+    #mobile-links
+    {
+        display: none;
+        flex-direction: column;
+        padding-right: 0.5em;
+    }
+    #mobile-links a
+    {
+        padding: 0.5em;
+        text-decoration: none;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #mobile-links a:hover
+    {
+        padding: 0.5em;
+        text-decoration: none;
+        background-color: var(--deep);
+    }
+    #mobile-menu
+    {
+        background-color: var(--medium);
+        margin-bottom: 1em;
+    }
+    #navbar
+    {
+        margin-bottom: 0em;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    #menu p
+    {
+        padding: 0.5em;
+        color: #FFFFFF;
+        margin-right: 1em;
+    }
+    #menu p:hover
+    {
+        background-color: var(--deep);
+    }
+    #mobile-projects
+    {
+        position: relative;
+        display: block;
+        margin: 0em;
+        padding: 0.5em;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    #mobile-projects-list
+    {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    #mobile-projects-list div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #mobile-projects-list p
+    {
+        background-color: var(--dark);
+        border-top-style: solid;
+        border-bottom-style: solid;
+        margin: 0.8em 1.5em 0em 1.5em;
+        font-size: 0.9em;
+    }
+    #mobile-projects-list a
+    {
+        font-size: 0.8em;
+    }
+}

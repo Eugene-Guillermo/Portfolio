@@ -1,0 +1,47 @@
+:root {
+    --dark: #233040;
+    --deep: #42526E;
+    --medium: #6B7B8C;
+    --soft: #AAB8C2;
+    --light: #D9E4E9;
+}
+body
+{
+    font-family: Helvetica;
+    background-color: var(--light);
+    font-size: 1.5em;
+    margin: 0;
+}
+#project
+{
+    width: 85%;
+    margin: auto;
+    background-color: var(--soft);
+    padding: 1em;
+    overflow: auto;
+    border-radius: 3em;
+    border-style: solid;
+    border-color: var(--dark);
+    border-width: 2px;
+    margin-bottom: 3em;
+}
+#project h1
+{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+#project h2
+{
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0;
+}
+#details
+{
+    width: 95%;
+    margin: auto;
+}
+#details img
+{
+    width: 100%;
+}

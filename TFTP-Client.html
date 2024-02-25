@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="project.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer>
             $(document).ready(function() {
@@ -10,10 +11,12 @@
                     if ($('#mobile-links').css('display') === 'none')
                     {
                         $('#mobile-links').css('display', 'flex');
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
                     }
                     else
                     {
                         $('#mobile-links').css('display', 'none');
+                        $("body").scrollTop($("#project").offset().top - 20);
                     }
                 })
                 $(window).resize(function() {
@@ -54,7 +57,7 @@
                     <div id="projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -64,7 +67,7 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
                     <div id="mobile-projects-list">
                         <p>Java</p>
                         <div id="java">
-                            <a href="Client-and-Cashier-Interface.html">Client and Cashier Interface</a>
+                            <a href="Inventory-and-Cashier-Interface.html">Inventory and Cashier Interface</a>
                             <a href="Cache-Simulation-Project.html">Cache Simulation Project</a>
                             <a href="Farming-Simulator-Game.html">Farming Simulator Game</a>
                         </div>
@@ -93,20 +96,23 @@
                         </div>
                         <p>C</p>
                         <div id="c">
-                            <a href="Game of Thrones Text-Based Game.html">Game of Thrones Text-Based Game</a>
+                            <a href="Game-of-Thrones-Text-Based-Game.html">Game of Thrones Text-Based Game</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div id="about">
+        <div id="project">
             <h1>TFTP Client</h1>
+            <h2>Java | June 2023 - July 2023</h2>
+            <a href="https://github.com/Eugene-Guillermo/TFTP-Client"><h2>Github Link</h2></a>
             <h2>A Machine Project Made for Network Application Protocols Class</h2><br>
-            <a href="https://github.com/Eugene-Guillermo/TFTP-Client"><h2>Github Link</h2></a><br>
-            <p>This is a TFTP client made to connect with TFTPD64, an open source application which includes a TFTP Server.</p>
-            <p>This was done in collaboration with a groupmate. We split it between file uploading (Write Request) and downloading (Read Request). I worked on write request. We also helped each other in any issues that may occur. I also made the sequence document.</p>
-            <p>I learned how to read RFC's. I also learned about formatting byte arrays to fit certain RFC's and reading data from sockets. I also learned about TFTP and UDP.</p>
+            <div id="details">
+                <p>This is a TFTP client made to connect with TFTPD64, an open source application which includes a TFTP Server.</p>
+                <p>This was done in collaboration with a groupmate. We split it between file uploading (Write Request) and downloading (Read Request). I worked on write request. We also helped each other in any issues that may occur. I also made the sequence document.</p>
+                <p>I learned how to read RFC's. I also learned about formatting byte arrays to fit certain RFC's and reading data from sockets. I also learned about TFTP and UDP.</p>
+            </div>
         </div>
     </body>
 </html>
